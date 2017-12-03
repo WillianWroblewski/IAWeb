@@ -34,7 +34,7 @@ namespace IAWeb.Infra.Repositories
 
         public Conversation GetByQuestion(string question)
         {
-            throw new NotImplementedException();
+            return _context.Conversations.FirstOrDefault(x => x.Question == question);
         }
 
         public void Save(Conversation conversation)

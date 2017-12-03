@@ -35,5 +35,13 @@ namespace IAWeb.Api.Controllers
         {
             return Ok(_repository.GetAll());
         }
+
+        [HttpGet]
+        [Route("v1/conversation/getByQuestion")]
+        [AllowAnonymous]
+        public IActionResult GetByUsername(string question)
+        {
+            return Ok(_repository.GetByQuestion(question));
+        }
     }
 }
