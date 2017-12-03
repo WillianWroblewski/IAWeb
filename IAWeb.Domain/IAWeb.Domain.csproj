@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Handlers\ConversationCommandHandler.cs" />
     <Compile Include="Commands\Handlers\CustomerCommandHandler.cs" />
+    <Compile Include="Commands\Inputs\RegisterConversationCommand.cs" />
     <Compile Include="Commands\Inputs\RegisterCustomerCommand.cs" />
+    <Compile Include="Commands\Results\GetConversationCommandResult.cs" />
     <Compile Include="Commands\Results\GetCustomerCommandResult.cs" />
+    <Compile Include="Commands\Results\RegisterConversationCommandRsult.cs" />
     <Compile Include="Commands\Results\RegisterCustomerCommandResult.cs" />
     <Compile Include="Entities\Conversation.cs" />
     <Compile Include="Entities\Customer.cs" />
@@ -51,6 +55,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\AccessLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IConversationRepository.cs" />
     <Compile Include="Repositories\ICustomerRepository.cs" />
     <Compile Include="Services\IEmailService.cs" />
     <Compile Include="ValueObjects\Document.cs" />
