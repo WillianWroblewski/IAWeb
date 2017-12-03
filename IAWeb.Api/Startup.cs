@@ -35,8 +35,10 @@ namespace IAWeb.Api
             services.AddTransient<IUow, Uow>();
 
             services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<IConversationRepository, ConversationRepository>();
 
             services.AddTransient<CustomerCommandHandler, CustomerCommandHandler>();
+            services.AddTransient<ConversationCommandHandler, ConversationCommandHandler>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
