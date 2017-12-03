@@ -39,7 +39,7 @@ namespace IAWeb.Api.Controllers
         [HttpGet]
         [Route("v1/conversation/getByQuestion")]
         [AllowAnonymous]
-        public IActionResult GetByUsername(string question)
+        public IActionResult GetByQuestion(string question)
         {
             return Ok(_repository.GetByQuestion(question));
         }
